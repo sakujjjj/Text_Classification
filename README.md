@@ -1,3 +1,4 @@
+# 簡易文本分類
 ```
 probs = lr.predict_proba(X2)[0]
 for predict_intent, prob in sorted(zip(lr.classes_, probs), key=lambda x: x[1], reverse=True):
@@ -14,7 +15,10 @@ for predict_intent, prob in sorted(zip(lr.classes_, probs), key=lambda x: x[1], 
 所得到的預測為:  
 ![image](https://user-images.githubusercontent.com/95430501/234507280-4cd5fd56-16a7-4b58-8229-3626ba739727.png)
 
-
+## References
+- [sklearn.feature_extraction.text.CountVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html)
+- [簡單快速上手自然語言處理中的文本分類](https://www.tpisoftware.com/tpu/articleDetails/2013)  
+- [分類特徵(Categorical Features)](https://ithelp.ithome.com.tw/articles/10205475)
 
 
 
