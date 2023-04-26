@@ -1,4 +1,15 @@
 # 簡易文本分類
+### 預測意圖
+`lr.predict(X2)`  
+- lr 是一個已經訓練好的 logistic regression 分類模型會使用已經學習到的特徵權重來預測輸入的文本屬於哪個分類。
+- predict() 方法會返回一個代表預測分類的數值，比如分類編號或分類機率等。 
+   
+例如此次`input = ["申請註冊帳號"]`  
+`print(lr.predict(X2))`為`['會員']`
+
+![image](https://user-images.githubusercontent.com/95430501/234512019-230786dc-3bb8-4888-b719-c4900dfcad79.png)
+
+
 ```
 probs = lr.predict_proba(X2)[0]
 for predict_intent, prob in sorted(zip(lr.classes_, probs), key=lambda x: x[1], reverse=True):
