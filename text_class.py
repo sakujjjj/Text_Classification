@@ -27,8 +27,8 @@ lr.fit(X, intents)
 
 # input
 # input = ["查詢明天的降雨量"]
-input = ["明天會下雨嗎?"]
-# input = ["申請註冊帳號"]
+# input = ["明天會下雨嗎?"]
+input = ["申請註冊帳號"]
 X2 = feature_extractor.transform(input)
 # print(len(X2.toarray()[0]))
 # print(X2)
