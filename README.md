@@ -1,4 +1,19 @@
 # 簡易文本分類
+### 簡易的自動文本分類
+
+* 使用Python中的Pandas, Scikit-learn等工具
+
+* 將Excel檔案匯入成Pandas DataFrame資料結構。
+
+* 使用Scikit-learn中的CountVectorizer模組將文本資料轉換成向量形式，並且使用二元語法形式的向量。
+
+* 將轉換後的向量和對應的標籤(label)送入LogisticRegression模型中進行訓練。
+
+* 將一個新的文本資料轉換成向量形式，並使用已經訓練好的模型對其進行預測。
+
+* 並且輸出預測結果以及預測結果的機率，例如此次input = ["明天會下雨嗎?"]，所得到的預測為: ['天氣']，並得到預測結果機率94%。
+
+
 ### 預測意圖
 `lr.predict(X2)`  
 - lr 是一個已經訓練好的 logistic regression 分類模型會使用已經學習到的特徵權重來預測輸入的文本屬於哪個分類。
